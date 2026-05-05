@@ -17,15 +17,15 @@ pipeline {
 
         GROUP_ID         = 'com.countrychicken'
         VERSION          = '1.0.0'
-        JAR_NAME         = 'country-chicken-backend'
+        JAR_NAME         = 'country-chicken-backend-1.0.0.jar'
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: 'test',
-                    url: 'https://github.com/srikanth78933/country-chicken-backend.git'
+                git branch: 'main',
+                    url: 'https://github.com/harikishore4094/country-chicken-backend.git'
             }
         }
 
